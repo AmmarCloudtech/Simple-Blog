@@ -4,7 +4,7 @@ import { fetchPost } from '../actions/index';
 
 class PostsShow extends Component {
   componentWillMount() {
-    this.props.fetchPost(this.propd.params.id);
+    this.props.fetchPost(this.props.params.id);
   }
   render() {
     return <div>Show Posts {this.props.params.id}</div>;
